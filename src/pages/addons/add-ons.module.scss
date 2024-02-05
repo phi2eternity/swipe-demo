@@ -1,0 +1,60 @@
+@import "@styles/layout";
+@import "@styles/typography";
+@import "@styles/variables";
+
+.addOns {
+
+
+  &Description {
+    @include caption-1;
+    margin: 16px 0;
+    color: $gray-500;
+  }
+
+  &__priceTag {
+    @include title-2;
+    display: flex;
+    width:100%;
+    color: $successful;
+    text-align: center;
+    border:1px solid $gray-100;
+    border-radius: 12px;
+    box-sizing: border-box;
+    height:56px;
+  }
+  &__products {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    & > div{
+        display: flex;
+        flex-direction: column;
+        gap:8px;
+    }
+
+  }
+
+  &__weakLink{
+    @include caption-1;
+    color: $gray-500;
+    text-align: center;
+    margin: 16px 0;
+    &:hover{
+      cursor: pointer;
+      color: $tertiary-700;
+    }
+  }
+}
+
+.row {
+  @include row;
+  margin:16px 0;
+
+  & > * {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+}

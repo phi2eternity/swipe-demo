@@ -1,0 +1,37 @@
+@import '@styles/variables.scss';
+
+.weakBtn{
+  background: white;
+    border: 2px solid $gray-300;
+  height:56px;
+  min-height:56px;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  border-radius: 12px;
+  width: 100%;
+
+}
+
+.weakBtn__label{
+  width: 69px;
+  height: 18px;
+
+
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 120%;
+
+  color: #495057;
+  user-select: none;
+  pointer-events: none;
+}
+.weakBtn:hover {
+  cursor: pointer;
+  background-color:#E5E5E5;
+}
+
+.weakBtn__label:active {
+  transform: scale(0.95);
+}

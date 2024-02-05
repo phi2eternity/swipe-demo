@@ -1,0 +1,35 @@
+@import "@styles/variables";
+@import "@styles/typography";
+
+.noApptCard {
+  display: flex;
+  padding: 12px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-color: $main-100;
+  border-radius: 18px;
+  width:100%;
+  &:hover {
+  }
+
+  &Column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height:50%;
+    margin-left: 12px;
+
+    & > h2 {
+      margin:0;
+      @include subhead;
+      color: $main-700;
+    }
+
+    & > h3 {
+      margin:0;
+      @include caption-1;
+      color: $gray-700;
+    }
+  }
+}

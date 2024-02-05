@@ -1,0 +1,151 @@
+@import "@styles/variables";
+@import "@styles/typography";
+@import "@styles/layout";
+
+
+.apptCard {
+  position: relative;
+  display: flex;
+  border-radius: 18px;
+  background-color:$main-100;
+  width:100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  transition: all .3s;
+  &:hover{
+    cursor:pointer;
+    background-color:$main-200;
+  }
+
+  &__completed{
+    @extend .apptCard;
+    background-color: $secondary-100;
+    &:hover{
+      cursor:pointer;
+      background-color:$secondary-200;
+    }
+  }
+  &__cancelled{
+    @extend .apptCard;
+    background-color: $danger-light;
+    transition: all .3s;
+    &:hover{
+      cursor:pointer;
+      opacity: .9;
+    }
+  }
+
+  & > *
+  {
+    padding:16px;
+  }
+
+  &__left {
+
+    border-right: 2px solid $white;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    flex:3;
+    align-items: start;
+
+    height:100%;
+    &__completed{
+        @extend .apptCard__left;
+      margin-top:16px;
+      padding:8px 16px
+    }
+    &__cancelled{
+        @extend .apptCard__left;
+      margin-top:16px;
+      padding:8px 16px
+    }
+
+    &Header {
+      @include headline;
+      display: block;
+      color: $main-600;
+      &__completed{
+        @extend .apptCard__leftHeader;
+        color: $secondary-500;
+      }
+      &__cancelled{
+        @extend .apptCard__leftHeader;
+        color: $danger;
+      }
+    }
+    &Subheader {
+      @include caption-1;
+      display: block;
+      color: $main-700;
+      &__completed{
+        @extend .apptCard__leftSubheader;
+        color: $secondary-400;
+      }
+      &__cancelled{
+        @extend .apptCard__leftSubheader;
+        color: $danger;
+      }
+
+    }
+    &Row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+
+    }
+    &Card{
+      padding:4px 10px;
+        @include caption-2;
+        color:$white;
+      position:absolute;
+      top:0;
+      left:0;
+      border-radius: 18px 0px;
+      &__completed{
+        @extend .apptCard__leftCard;
+        background-color: $secondary-500;
+      }
+      &__cancelled{
+        @extend .apptCard__leftCard;
+        background-color: $danger;
+      }
+    }
+  }
+  &__right{
+    flex:7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & > svg{
+      height:24px;
+      width:24px;
+    }
+
+  }
+  &__right__left{
+    flex:7;
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    align-items: start;
+    justify-content: center;
+    &Header {
+      @include subhead;
+      @include textOverflow(120px);
+      display: block;
+      color: $main-700;
+    }
+    &Subheader {
+      @include caption-1;
+      @include textOverflow(120px);
+      display: block;
+
+    }
+
+  }
+
+}

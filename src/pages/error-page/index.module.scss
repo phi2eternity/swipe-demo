@@ -1,0 +1,83 @@
+@import '@styles/layout';
+@import '@styles/typography';
+@import '@styles/theme';
+
+.errorPage {
+  height: 100vh;
+  background-color: $main-400 !important;
+  position: relative;
+
+  @include page;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Nav {
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 100px;
+    }
+  }
+  &Row1 {
+    @include column;
+    height: 15vh;
+    align-items: flex-end;
+    justify-content: center;
+    width: 60%;
+
+    text-align: center;
+    h1 {
+      @include large-title;
+      font-weight: 700;
+      color: $main-800;
+    }
+    h2 {
+      @include title-2;
+      font-weight: 700;
+      color: $main-800;
+    }
+  }
+  &Row2 {
+    @include column;
+    padding: 3em 0;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    z-index: 2;
+    h3 {
+      @include title-3;
+      font-weight: 700;
+      color: $main-800;
+      margin-bottom: 0.8em !important;
+    }
+    p {
+      color: $main-700;
+      font-weight: 800;
+      margin-bottom: 0.8em !important;
+    }
+    a {
+      @include row;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      background-color: $secondary-500;
+      border-radius: 10px;
+      padding: 0.4em 0;
+      width: 80%;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  &Row3 {
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+  }
+}

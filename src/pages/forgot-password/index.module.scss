@@ -1,0 +1,63 @@
+@import '@styles/layout';
+@import '@styles/typography';
+.forgotPasswordPage {
+  @include page;
+  display: flex;
+  flex-direction: column;
+  .forgotTitleWrapper {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+    background: #faca86;
+    padding-bottom: 3em;
+    & > .forgotTitle {
+      @include title-1;
+    }
+  }
+
+  .forgotInputWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+
+    & > * {
+      margin-bottom: 1em;
+    }
+  }
+  &Inner {
+    @include stackedTopBorder;
+    &Text {
+      font-weight: 500;
+      font-size: 13px;
+      color: #6c757d;
+      margin-bottom: 1em;
+    }
+    .loginInputWrapper {
+      & > * {
+        margin-bottom: 1em;
+      }
+    }
+    .loginPageInnerText {
+      font-weight: 500;
+      font-size: 13px;
+      color: #6c757d;
+      margin-bottom: 1em;
+      margin-top: 0;
+    }
+    .loginBtnWrapper {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > .loginBtn {
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 120%;
+        color: #212529;
+        font-weight: 600;
+      }
+    }
+  }
+}

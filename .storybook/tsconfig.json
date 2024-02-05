@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    // Additional or overridden options specific to storybook
+  },
+  "include": [
+    "./**/*.stories.ts",
+    "./**/*.stories.tsx"
+  ]
+}

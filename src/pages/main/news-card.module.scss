@@ -1,0 +1,78 @@
+/* NewsCard.css */
+
+.newsCard {
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.newsCard::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position it over the background image */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0,0.9)); /* Example gradient */
+  z-index: 1; /* Ensure it's above the background image but below the content */
+}
+
+.newsContent {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  padding: 20px;
+  z-index: 2; /* Ensure it's above the background image but below the content */
+}
+
+.newsContent h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.newsContent p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.newsFooter {
+  &Bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &Buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  & p {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.readMoreButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  // Uppercase text
+  text-transform: uppercase;
+  font-weight: bold;
+  // Underline text
+    text-decoration: underline;
+}
+

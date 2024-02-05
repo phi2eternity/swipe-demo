@@ -1,0 +1,10 @@
+.inner-carousel {
+  display: flex;
+  gap:16px;
+}
+
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+  width: 100%;
+}

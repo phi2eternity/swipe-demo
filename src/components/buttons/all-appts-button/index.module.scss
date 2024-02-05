@@ -1,0 +1,25 @@
+@import '@styles/variables';
+@import '@styles/typography';
+
+.allApptsButton{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $other-04;
+  border-radius: 18px;
+  width:100%;
+  padding: 12px;
+  transition: all .3s;
+  gap:16px;
+  &:hover {
+    cursor: pointer;
+    background-color: $main-300;
+  }
+
+  & > h2 {
+    margin:0;
+    @include subhead;
+    color: $main-700;
+  }
+}

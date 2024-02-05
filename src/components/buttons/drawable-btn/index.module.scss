@@ -1,0 +1,27 @@
+@import "@styles/variables.scss";
+@import "@styles/typography.scss";
+
+.drawableBtn{
+  border-bottom: 1px solid $gray-100;
+  width:100%;
+  padding:16px;
+  justify-content: space-between;
+  background-color:$white;
+  display: flex;
+  transition: all .2s ease-in-out;
+
+  &:hover{
+    background-color:$gray-100;
+    cursor: pointer;
+  }
+
+  & > label{
+    @include caption-1;
+    color: $gray-700;
+
+  }
+  & > svg{
+    fill:$gray-300;
+    padding-right:16px;
+  }
+}

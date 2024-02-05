@@ -1,0 +1,75 @@
+.service-row {
+  padding: 1em 1.5em;
+  margin-top: -2em;
+  background: #ffffff;
+  border-radius: 32px;
+  z-index: 2;
+  position: relative;
+}
+
+.service-row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-row .header-row {
+  padding-left: 0.3em !important;
+  padding-top: 1em;
+}
+
+.service-row .header-row h2 {
+  font-weight: 900;
+  color: rgb(46, 46, 46);
+  font-size: 1em;
+}
+
+.appointments-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:16px;
+}
+
+.header-row {
+  width: 100%;
+  padding: 0 1.5em;
+  padding-bottom: 1.6em;
+
+}
+
+.header-row h2 {
+  color: #ADB5BD;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.home-page .appointment-card {
+  margin-bottom: 0.8em;
+}
+
+.promotions-row {
+  padding: 1em 2em;
+}
+
+.promotions-row .item {
+  margin-right: 1.3em;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+img {
+  pointer-events: none;
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  top: 2.5em;
+  left: 2em;
+  z-index: 100;
+}

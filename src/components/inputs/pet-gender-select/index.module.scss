@@ -1,0 +1,97 @@
+@import '@styles/variables';
+@import '@styles/typography';
+
+.dropdownBtnTemplate{
+  background-color:$gray-100;
+  height:64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all .3s;
+  border-radius: 16px;
+
+  &__buttonGroup{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+    justify-content: space-between;
+  }
+
+}
+.dropdownBtnTemplate:hover{
+  cursor: pointer;
+  background-color:#E5E5E5;
+}
+
+.dropdownBtnTemplate__header{
+  display: flex;
+  align-items: center;
+  width:100%;
+  padding:16px;
+  justify-content: space-between;
+  & svg{
+    height:32px;
+    width:32px;
+    color:#CED4DA;
+    &:hover{
+      cursor: pointer;
+      color:#495057;
+    }
+  }
+  & > h1 {
+    @include title-2;
+  }
+}
+
+.dropdownBtnTemplate__icon:hover{
+  cursor: pointer;
+}
+
+.dropdownBtnTemplate__label{
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  position: relative;
+  margin: 16px 12px ;
+  user-select: none;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+  color: #495057;
+
+}
+
+
+.dropdownBtnTemplate__label__floating{
+  @extend .dropdownBtnTemplate__label;
+  position: absolute;
+  font-size:11px;
+  transform: translateY(-16px);
+  color: #A9593D;
+
+}
+
+.dropdownBtnTemplate__value{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top:12px;
+  color: #495057;
+  margin: 32px 12px ;
+  user-select: none;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}
+
+.genderRow{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+    justify-content: space-between;
+    margin: 16px 12px ;
+}

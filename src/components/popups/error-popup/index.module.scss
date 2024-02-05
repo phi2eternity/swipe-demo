@@ -1,0 +1,27 @@
+.errorPopUp {
+  position: absolute;
+  top: 5em;
+  right: -100%;
+  width: fit-content;
+  transition: right 1s ease-in-out;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  color: white;
+  background-color: #fa9700;
+  max-width: 35%;
+  z-index: 100;
+}
+
+.errorPopUpActive {
+  position: absolute;
+  top: 5em;
+  width: fit-content;
+  right: 3em;
+  transition: right 1s ease-in-out;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  color: white;
+  background-color: #fa9700;
+  z-index: 100;
+  max-width: 35%;
+}

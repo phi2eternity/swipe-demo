@@ -1,0 +1,63 @@
+@import "@styles/variables.scss";
+@import "@styles/typography.scss";
+
+.book-page {
+  background: #ffffff;
+}
+
+.calender-header-row {
+
+  padding: 2em 1em;
+  display: flex;
+  color: #212529;
+  justify-content: space-between;
+  & > h2{
+    @include title-3;
+
+  }
+}
+.book-page__select-branch {
+  margin: 2rem 1rem;
+}
+.book-page__select-row {
+  margin: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #adb5bd;
+  font-weight: 800;
+}
+
+.legend {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  margin-left: 12px;
+}
+
+.legend--full {
+  background-color: #ff424b;
+}
+.legend--empty {
+  background-color: #3dbf3b;
+}
+
+.calender-header-row h2 {
+  font-size: 1em;
+  color: #212529;
+  @include title-1;
+
+}
+
+.slots-row {
+  padding: 1em 0;
+}

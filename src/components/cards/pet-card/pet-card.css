@@ -1,0 +1,21 @@
+.pet-card {
+  width: 150px;
+  height: 68px;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pet-card h1 {
+  color: #da8100;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.pet-card h2 {
+  color: #aeaeae;
+  font-weight: 800;
+  font-size: 0.8em;
+}

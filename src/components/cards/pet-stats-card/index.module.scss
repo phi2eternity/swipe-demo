@@ -1,0 +1,45 @@
+@import '@styles/variables';
+@import '@styles/typography';
+
+.petStatsCard {
+  border-radius: 18px;
+  background-color:$main-100;
+  padding:16px;
+  transition: all .3s;
+
+  &Header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:16px;
+    &Left{
+      display: flex;
+      flex-direction: column;
+      & > h4{
+        @include  headline;
+        color:$main-600;
+      }
+      & > p{
+        @include caption-1;
+        color:$gray-500;
+      }
+    }
+    & > svg{
+      color:$main-600;
+      width:24px;
+      height:24px;
+    }
+  }
+  &:hover{
+    background-color:$main-200;
+    cursor: pointer;
+  }
+  &Content{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    & > * {
+      flex:1;
+    }
+  }
+}

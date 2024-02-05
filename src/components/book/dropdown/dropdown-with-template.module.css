@@ -1,0 +1,47 @@
+.selectButton {
+    position: relative;
+    font-family: 'Manrope', sans-serif;
+}
+
+.selectButton button {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.selectButton__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.selectButton__listItem {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.selectButton__listItem:hover {
+    background-color: #f2f2f2;
+}
+
+.icon {
+    color: #dee2e6;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon.rotate {
+    transform: rotate(180deg);
+}

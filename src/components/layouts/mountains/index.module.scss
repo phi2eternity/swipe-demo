@@ -1,0 +1,11 @@
+
+.mountains {
+  position: absolute;
+  top:230px;
+  height:100%;
+  background-position: center;
+  width:100%;
+  opacity: 1;
+
+  background: url('@assets/mountains.svg') repeat-x;
+}

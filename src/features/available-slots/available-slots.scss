@@ -1,0 +1,33 @@
+@import "@styles/typography";
+@import "@styles/variables";
+
+.slots-wrapper {
+  width: 100%;
+  padding: 1em 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5em;
+  row-gap: 1.8em;
+}
+
+.slots-column{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slots-warning{
+  margin-top:1rem;
+    text-align: center;
+    @include caption-1;
+    color: $danger;
+    width:100%;
+
+
+}
+
+.slot-wrapper {
+
+  cursor: pointer;
+}

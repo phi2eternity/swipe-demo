@@ -1,0 +1,21 @@
+.bookBtn {
+  background-color: #ffffff;
+  border: 2px solid #FA9700;
+  border-radius: 12px;
+  transition: all .3s ease-in-out;
+  cursor:pointer;
+  padding: 10px 16px 10px 16px;
+  box-sizing: border-box;
+  font-size:12px;
+  color: #FA9700;
+  font-weight: 800;
+
+  &:hover {
+    background-color: #FA9700;
+    color: #f5f5f5;
+  }
+  &__active{
+    background-color: #FA9700;
+    color: #f5f5f5;
+  }
+}

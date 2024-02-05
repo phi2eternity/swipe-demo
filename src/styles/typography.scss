@@ -1,0 +1,80 @@
+@mixin base-typography {
+  font-style: normal;
+  line-height: 120%;
+  font-family: "Manrope", sans-serif;
+}
+
+@mixin large-title {
+  @include base-typography;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+@mixin title-1 {
+  @include base-typography;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+@mixin title-2 {
+  @include base-typography;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@mixin title-3 {
+  @include base-typography;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@mixin headline {
+    @include base-typography;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+@mixin body {
+  @include base-typography;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@mixin callout {
+  @include base-typography;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@mixin subhead {
+  @include base-typography;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@mixin footnote {
+  @include base-typography;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+}
+
+@mixin caption-1 {
+  @include base-typography;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 146%;
+}
+
+@mixin caption-2 {
+  @include base-typography;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 142%;
+}
+
+@mixin caption-3 {
+  @include base-typography;
+  font-weight: 700;
+  font-size: 10px;
+}

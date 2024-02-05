@@ -1,0 +1,24 @@
+@import "@styles/variables";
+@import "@styles/typography";
+
+.clientCard{
+  display: flex;
+    flex-direction: row;
+  gap:8px;
+  &Icon{
+
+  }
+  &Column{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    &__name{
+      @include subhead;
+      color:$main-800;
+    }
+    &__email{
+      @include caption-1;
+      color:$main-700;
+    }
+  }
+}

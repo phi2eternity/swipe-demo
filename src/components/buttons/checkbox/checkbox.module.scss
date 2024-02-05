@@ -1,0 +1,67 @@
+
+$done-icon-color: #3DBF3B;
+$done-icon-size: 20px;
+$done-icon-stroke-width: 4px;
+
+
+.checkbox{
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 24px;
+    min-height: 24px;
+  height:24px;
+  width:24px;
+  background-color:white;
+  border: 2px solid #DEE2E6;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+    align-items: center;
+  justify-content: center;
+
+  &:hover input ~ span{
+    background-color: #ccc;
+  }
+
+  &__checked {
+    @extend .checkbox;
+    border-color:#3DBF3B;
+    background-color:white;
+    svg {
+      color: $done-icon-color;
+      height: $done-icon-size;
+      width: $done-icon-size;
+  stroke-width: $done-icon-stroke-width;
+    stroke-linecap: round;
+    transition: all .2s ease-in-out;
+    }
+
+  }
+
+  &__checkmark:after{
+    content:"";
+    position: absolute;
+
+  }
+
+
+  & input{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+  }
+  &__checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+  }
+
+}

@@ -1,0 +1,18 @@
+@import '@styles/variables';
+@import '@styles/typography';
+
+.statsCard{
+    border-radius: 18px;
+    background-color:$white;
+  border: 1px solid $main-200;
+  padding:16px;
+  &Value{
+    @include large-title;
+    color:$main-500;
+  }
+  &Caption{
+    @include caption-1;
+    color:$gray-900;
+  }
+
+}

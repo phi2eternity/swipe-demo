@@ -1,0 +1,70 @@
+
+.service-pet-row {
+  width: 100%;
+  display: flex;
+  padding: 2em;
+  align-items: center;
+  overflow: visible;
+  position: relative;
+  padding-bottom:4em;
+}
+
+.service-pet-row a {
+  display: flex;
+  align-items: center;
+}
+
+.service-pet-row svg {
+  fill: black;
+}
+
+.service-pet-row h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.service-title {
+  padding-left: 0.6em;
+}
+
+.service-pet-row h1 {
+  font-size: 1.8em;
+}
+
+.grooming-heading {
+  color: #27946d;
+}
+
+.grooming-row {
+  background-color: #b4ffe4;
+}
+
+.wewash-row {
+  background-color: #e1e0ff;
+}
+
+.wewash-row h3 {
+  color: #4947ca;
+}
+
+.dropdown-wrapper {
+  position: absolute;
+  right: 1em;
+  top: 2em;
+  z-index: 1000;
+  width: 150px;
+}
+
+.service-pet-row .dropdown {
+  padding: 0;
+}
+
+.service-pet-row .dropdown-main {
+  box-shadow: 0px 0px 54px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+
+.service-pet-row .dropdown-row {
+  padding: 0 0.8em;
+  height: 50px;
+}

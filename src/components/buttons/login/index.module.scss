@@ -1,0 +1,29 @@
+@import "@styles/variables";
+@import "@styles/typography";
+
+.loginWithButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: .5em;
+  position: relative;
+  border: 1px solid $gray-200;
+  background-color: $white;
+  transition: all .3s;
+  border-radius: 16px;
+  & > svg {
+    position: absolute;
+    left: 10px;
+    color: #495057;
+  }
+  & > h2 {
+    @include footnote;
+    color:$gray-600;
+  }
+  &:hover{
+    cursor: pointer;
+    background-color: $gray-100;
+  }
+}

@@ -1,0 +1,44 @@
+@import "@styles/variables";
+@import "@styles/typography";
+
+
+.pageLayout{
+
+  &Top{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:24px;
+    gap:16px;
+    padding-bottom:64px;
+    height:112px;
+    width:100%;
+    background-color:$main-400;
+    &>h1{
+      @include title-2;
+    }
+    & > svg{
+      transition: all 1s;
+      width: 24px;
+      height: 24px;
+      &:hover{
+        cursor:pointer;
+        color:$white;
+        rotate: 360deg;
+      }
+    }
+  }
+  &Body {
+    margin-top: -2rem;
+    padding: 8px 0;
+    background-color: $white;
+    border-radius: 32px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

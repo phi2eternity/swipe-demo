@@ -1,0 +1,61 @@
+@import "@styles/variables";
+@import "@styles/typography";
+
+.apptRemovalJourney {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+
+  &Text{
+    position: relative;
+    margin-top:-16px;
+    margin-bottom:16px;
+    margin-left:16px;
+    color:$gray-500;
+    @include caption-2;
+  }
+
+  & > * {
+    width:100%;
+    margin-bottom: 16px;
+  }
+
+
+  &Content{
+    & > h3{
+      @include title-3;
+      text-align: center;
+      color: $gray-600;
+    }
+    & .apptRemovalJourneyRejected{
+      color:$danger;
+
+    }
+  }
+
+  &Header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:8px;
+    padding:16px;
+    & > h1{
+      @include title-2;
+    }
+    & > svg{
+      transition: all .3s;
+      width: 32px;
+      height: 32px;
+      color:$gray-500;
+
+      &:hover{
+        cursor:pointer;
+        color:$gray-600;
+      }
+    }
+  }
+}

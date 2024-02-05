@@ -1,0 +1,38 @@
+@import "@styles/variables.scss";
+@import "@styles/typography.scss";
+
+
+.petCard {
+  width: 150px;
+  height: 68px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.petCard h1 {
+  color: #da8100;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.petCard h2 {
+  color: #aeaeae;
+  font-weight: 800;
+  font-size: 0.8em;
+}
+
+.vaccineExpired {
+  background-color: $danger;
+  color:$white;
+  width: 100%;
+  border-radius: 0 0px 18px 18px;
+  @include caption-3;
+  position: absolute;
+  padding: 2px 8px;
+    bottom: -.4em;
+  left:0;
+}

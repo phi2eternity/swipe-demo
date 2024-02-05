@@ -1,0 +1,73 @@
+.textInputControlled{
+  width: 100%;
+  border: 2px solid #E9ECEF;
+  background-color:#FFFFFF;
+  border-radius: 12px;
+  height:64px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.textInputControlled__header{
+  display: flex;
+  padding:16px;
+  align-items: center;
+  width:100%;
+  justify-content: space-between;
+  & svg{
+    height:32px;
+    width:32px;
+    color:#CED4DA;
+    &:hover{
+      cursor: pointer;
+      color:#495057;
+    }
+  }
+}
+
+.textInputControlled__icon:hover{
+  cursor: pointer;
+}
+
+.textInputControlled__label{
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  position: relative;
+  margin: 16px 12px ;
+  user-select: none;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+  color: #495057;
+
+}
+
+
+.textInputControlled__label__floating{
+  @extend .textInputControlled__label;
+  position: absolute;
+  font-size:11px;
+  transform: translateY(-16px);
+  color: #A9593D;
+
+}
+
+.textInputControlled__value{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top:12px;
+  color: #495057;
+  margin: 32px 12px ;
+  user-select: none;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}

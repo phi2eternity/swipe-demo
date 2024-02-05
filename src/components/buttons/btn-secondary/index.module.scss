@@ -1,0 +1,32 @@
+@import "@styles/variables";
+@import "@styles/typography";
+
+.btnSecondary {
+  background-color: $other-05;
+  width:100%;
+  padding:16px;
+  border-radius:18px;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: translate(0, -2px);
+  }
+  &:active {
+    transform: translate(0, 0);
+  }
+
+  &__icon{
+    height:40px;
+
+  }
+  &__text{
+    @include subhead;
+    color: $gray-900;
+    margin-top: 8px;
+  }
+
+}

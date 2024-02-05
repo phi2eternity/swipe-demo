@@ -1,0 +1,59 @@
+@import '@styles/variables';
+@import '@styles/typography';
+
+.pets{
+  background-color:$white;
+  width:100%;
+  height:100%;
+  min-height:100%;
+  padding-bottom:32px;
+
+  &Header{
+    background-color: $main-400;
+    height:100px;
+    & > svg{
+      transition: all .7s ease-in-out;
+      width:24px;
+      height:24px;
+      &:hover{
+        cursor: pointer;
+        rotate: 360deg;
+      }
+    }
+
+    padding:16px;
+    padding-bottom:56px;
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+    & > h1{
+      flex:1;
+      display: block;
+      @include title-3;
+      color: $gray-900;
+
+    }
+  }
+  &Body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top:-2rem;
+    border-radius: 32px;
+    background-color:$white;
+    height:100%;
+    padding:16px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+
+    gap:16px;
+    // Add 32px bottom margin to plast child
+
+
+
+
+  }
+
+
+
+}
