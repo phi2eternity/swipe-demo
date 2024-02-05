@@ -16,6 +16,7 @@ const VerticalCarousel : React.FC <VerticalCarouselProps> = ({ children } ) => {
       slidesPerView={1}
       className="mySwiper"
       threshold={25}
+      loop={true}
       style={{
         height: '100%',
       }}
