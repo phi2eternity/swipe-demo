@@ -4,12 +4,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
+  touch-action: manipulation;
+
 }
 
-.App {
-  position: relative;
-  overflow: hidden;
-}
 
 h1,
 h2,
@@ -22,18 +20,18 @@ h4 {
 .clickable {
   cursor: pointer;
 }
-
 body {
-  box-sizing: border-box;
   font-size: 14px;
-  margin: 0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow-y: hidden;
 }
 
 
+
 .page {
-  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
   position: relative;
-  height: 100vh;
 
 }
 
@@ -51,8 +49,8 @@ body {
   .page {
     max-width: 450px;
     width: 450px;
-    max-height: 85vh;
-    height: 85vh;
+    max-height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
     border-radius: 30px;
     background-color: #ffffff;

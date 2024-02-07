@@ -5,12 +5,13 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig({
   plugins: [react(), VitePWA({
     registerType: 'autoUpdate', injectRegister: 'auto',
-    includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'masked-icon.svg'],
+    includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
     manifest:{
-      name: "Quicker Grooming App",
-      short_name: "Quicker",
-      description: "Designed to schedule for your furry companions",
-      theme_color: "#faca86",
+      // App is going to show daily HackerNews stories. Write name accordingly
+      name: "Hacker Stories: Daily Feed of HackerNews",
+      short_name: "Hacker Stories",
+      description: "Get your daily dose of HackerNews stories, right in your browser!",
+      theme_color: "#148567",
       icons: [
         {
           "src": "pwa-192x192.png",
